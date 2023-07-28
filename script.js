@@ -11,18 +11,16 @@ class Rectangle {
 		return this.height;
 	}
 	getArea(){
-		const AreaRec=(this.width * this.height);
-		return AreaRec;
+		return this.width * this.height;
 	}
 }
 
 class Square extends Rectangle {
 	constructor(side){
-		this.side=side;
+		super(side,side);
 	}
 	getPerimeter(){
-		const PerSquare=(4 * this.side);
-		return PerSquare;
+		return 4 * this.width;
 	}
 }
 const rectangle = new Rectangle(4,5);
